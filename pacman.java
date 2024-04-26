@@ -1,3 +1,6 @@
+package pacman;
+import java.util.Scanner;
+
 class PacMan{
     private int posX = 0; /*X es el suelo*/
     private int posY = 0; /*Y es hacia arriba*/
