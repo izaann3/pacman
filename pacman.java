@@ -24,6 +24,8 @@ class PacMan{
 }
 
 class Main {
-
+    public static void main(String[] args) {
+        PacMan pacMan = new PacMan();
+        pacMan.move(0, 0);
     }
 }
