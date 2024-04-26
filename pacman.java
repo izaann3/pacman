@@ -17,9 +17,9 @@ class PacMan{
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.print("Cuanto quieres moverte en X: ");
+            System.out.print("Cuanto quieres moverte en X (solo puedes moverte una casilla): ");
             int moveX = scanner.nextInt();
-            System.out.print("Cuanto quieres moverte en en Y: ");
+            System.out.print("Cuanto quieres moverte en en Y (solo puedes moverte una casilla): ");
             int moveY = scanner.nextInt();
 
             newPosX += moveX;
@@ -29,9 +29,15 @@ class PacMan{
             this.posY = newPosY;
 
             System.out.println("Pac-Man se ha movido a la posición (" + this.posX + ", " + this.posY + ")");
+            fruta();
         }
     }
+    public void fruta() {
+        this.punctuation += 100;
+        System.out.println("Has recogido una cereza. Puntuación actual: " + punctuation);
+    }
 }
+
 
 class Main {
     public static final void main(String[] args) {
