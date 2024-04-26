@@ -3,10 +3,14 @@ import java.util.Scanner;
 class PacMan{
     private int posX; /*X es el suelo*/
     private int posY; /*Y es hacia arriba*/
+    private int lifes;
+    private int punctuation;
 
     public PacMan() {
         this.posX = 0;
         this.posY = 0;
+        this.lifes = 0;
+        this.punctuation = 0;
     }
 
     public void move(int newPosX, int newPosY){
