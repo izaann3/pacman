@@ -9,25 +9,27 @@ class PacMan{
     public PacMan() {
         this.posX = 0;
         this.posY = 0;
-        this.lifes = 0;
+        this.lifes = 3;
         this.punctuation = 0;
     }
 
     public void move(int newPosX, int newPosY){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Cuanto quieres moverte en X: ");
-        int moveX = scanner.nextInt();
-        System.out.print("Cuanto quieres moverte en en Y: ");
-        int moveY = scanner.nextInt();
+        while (true) {
+            System.out.print("Cuanto quieres moverte en X: ");
+            int moveX = scanner.nextInt();
+            System.out.print("Cuanto quieres moverte en en Y: ");
+            int moveY = scanner.nextInt();
 
-        newPosX += moveX;
-        newPosY += moveY;
+            newPosX += moveX;
+            newPosY += moveY;
 
-        this.posX = newPosX;
-        this.posY = newPosY;
+            this.posX = newPosX;
+            this.posY = newPosY;
 
-        System.out.println("Pac-Man se ha movido a la posición (" + this.posX + ", " + this.posY + ")");
+            System.out.println("Pac-Man se ha movido a la posición (" + this.posX + ", " + this.posY + ")");
+        }
     }
 }
 
