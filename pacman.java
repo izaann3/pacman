@@ -9,5 +9,13 @@ class PacMan{
         int moveX = scanner.nextInt();
         System.out.print("Cuanto quieres moverte en en Y: ");
         int moveY = scanner.nextInt();
+        
+        newPosX += moveX;
+        newPosY += moveY;
+
+        this.posX = newPosX;
+        this.posY = newPosY;
+
+        System.out.println("Pac-Man se ha movido a la posición (" + this.posX + ", " + this.posY + ")");
     }
 }
