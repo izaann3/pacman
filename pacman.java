@@ -1,9 +1,13 @@
-package pacman;
 import java.util.Scanner;
 
 class PacMan{
-    private int posX = 0; /*X es el suelo*/
-    private int posY = 0; /*Y es hacia arriba*/
+    private int posX; /*X es el suelo*/
+    private int posY; /*Y es hacia arriba*/
+
+    public PacMan() {
+        this.posX = 0;
+        this.posY = 0;
+    }
 
     public void move(int newPosX, int newPosY){
         Scanner scanner = new Scanner(System.in);
@@ -24,7 +28,7 @@ class PacMan{
 }
 
 class Main {
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         PacMan pacMan = new PacMan();
         pacMan.move(0, 0);
     }
